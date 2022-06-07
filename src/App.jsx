@@ -2,10 +2,10 @@ import React from 'react';
 
 import './index.scss';
 
-import Dimension from './Dimension.jsx';
+import Dimensions from './Dimensions.jsx';
 
 const App = () => {
-  return <Dimension />
+  return <Dimensions />
 }
 
 export default App;

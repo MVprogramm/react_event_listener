@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Dimension extends React.Component {
+class Dimensions extends React.Component {
   state = {
     width: window.innerWidth,
     hight: window.innerHeight
@@ -9,7 +9,7 @@ class Dimension extends React.Component {
   componentDidMount() {
     window.addEventListener('resize', this.onPesize);
 
-    this.setDimension(
+    this.setDimensions(
       this.state.width,
       this.state.hight
     );
@@ -20,13 +20,13 @@ class Dimension extends React.Component {
   }
 
   onPesize = (event) => {
-    this.setDimension(
+    this.setDimensions(
       event.target.innerWidth,
       event.target.innerHeight
     )
   }
 
-  setDimension = (width, height) => {
+  setDimensions = (width, height) => {
     this.setState({
       width,
       height
@@ -44,4 +44,4 @@ class Dimension extends React.Component {
   }
 };
 
-export default Dimension;
+export default Dimensions;
