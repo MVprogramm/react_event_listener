@@ -3,7 +3,7 @@ import React from 'react';
 class Dimensions extends React.Component {
   state = {
     width: window.innerWidth,
-    hight: window.innerHeight
+    height: window.innerHeight
   }
 
   componentDidMount() {
@@ -11,7 +11,7 @@ class Dimensions extends React.Component {
 
     this.setDimensions(
       this.state.width,
-      this.state.hight
+      this.state.height
     );
   }
 
@@ -38,7 +38,7 @@ class Dimensions extends React.Component {
   render() {
     return (
       <div>
-        {`${this.state.width}px - ${this.state.hight}px`}
+        {`${this.state.width}px - ${this.state.height}px`}
       </div>
     );
   }
